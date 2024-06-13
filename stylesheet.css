@@ -59,3 +59,29 @@
     color: black;
 }
 
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    padding-top: 200px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-inline-size: 66ch;
+
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: beige;
+}
+
+.form {
+    display: flex;
+    padding: 40px;
+    gap: 90px;
+}
