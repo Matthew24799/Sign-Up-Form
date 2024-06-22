@@ -54,7 +54,6 @@
 .footer {
     position: absolute;
     bottom: 1rem;
-    width: 100%;
     height: 30px;
     color: black;
 }
@@ -62,26 +61,94 @@
 .rightContainer {
     display: flex;
     flex-direction: column;
+    width: 65%;
+    overflow: hidden;
 }
 
 .info {
-    padding-top: 200px;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
     font-size: 1.5rem;
     line-height: 1.5;
     max-inline-size: 66ch;
+}
 
+.info p {
+    margin-top: 1rem;
 }
 
 .formBox {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    font-size: 1.5rem;
-    background-color: beige;
+    padding: 2rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+    gap: 1rem;
+    box-shadow: 1px 7px 5px 0px #BEC5DB,
+                0px 0px 5px 0px #0A0A0A;
 }
 
+.formBox p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form div {
+    padding-bottom: 20px;
+} 
 .form {
     display: flex;
-    padding: 40px;
     gap: 90px;
+}
+
+input, label {
+    display: block;
+}
+
+input {
+    border:1px, solid, #E5E7EB;
+    border-radius: 3px;
+}
+
+
+
+input:focus {
+    border: none;
+    border: 1px, solid, rgb(87, 87, 249);
+    box-shadow: 0px 1px 5px 0px #000000;
+}
+
+input:invalid {
+    border-color: red;
+  }
+
+  
+.bottom {
+    padding: 10px;
+}
+
+button, .bottom p {
+    position: relative;
+    left: 2rem;
+    padding-top: 20px;
+}
+
+.create {
+    border: none;
+    background-color: #596D48;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 10px 40px;
+    box-shadow: 0px 3px 5px 0px #989B99;
+}
+
+.logIn {
+    position: relative;
+    left: 0.5rem;
+    border: none;
+    background-color: inherit;
+    color: green;
+    cursor: pointer;
 }
